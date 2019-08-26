@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <% num1, num2 = params[:number1].to_i, params[:number2].to_i %>
+    <% if params[:operation] == 'add' %>
+      <p><%= num1 + num2 %></p>
+    <% elsif params[:operation] == 'subtract' %>
+      <p><%= num1 - num2 %></p>
+    <% elsif params[:operation] == 'multiply' %>
+      <p><%= num1 * num2 %></p>
+    <% elsif params[:operation] == 'divide' %>
+      <p><%= num1 / num2 %></p>
+    <%end%>
+  </body>
+</html>
